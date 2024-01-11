@@ -15,6 +15,7 @@ const TaskList = (props) => {
     const updatedTaskList = props.listOfTasks.filter(
       (task) => task.id !== taskId
     );
+    console.log(updatedTaskList);
     props.updateAfterAction(updatedTaskList);
   };
 
